@@ -1,44 +1,82 @@
 <div align="center">
-    <a href="https://github.com/MarSeventh/CloudFlare-ImgBed"><img width="80%" alt="logo" src="readme/banner.png" /></a>
-    <p><em>🗂️ 支持 Docker 与 Serverless 部署的开源文件托管方案，兼容多种存储后端，并提供 RESTful API 与 WebDAV 支持。</em></p>
+    <a href="https://github.com/MarSeventh/CloudFlare-ImgBed">
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="readme/animated-banner-dark.apng" />
+            <source media="(prefers-color-scheme: light)" srcset="readme/animated-banner-light.apng" />
+            <img width="80%" alt="CloudFlare ImgBed 动画 Logo" src="readme/animated-banner-light.apng" />
+        </picture>
+    </a>
+    <p><em>🗂️ 打破图床边界，构建你的专属开源文件托管引擎。</em></p>
     <p>
-        <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/blob/main/README_zh.md">简体中文</a> | <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/blob/main/README.md">English</a> | <a href="https://cfbed.sanyue.de">官方网站</a>
+        <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/blob/main/README_zh.md">简体中文</a> &nbsp;·&nbsp; <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/blob/main/README.md">English</a> &nbsp;·&nbsp; <a href="https://cfbed.sanyue.de">官方网站</a> &nbsp;·&nbsp; <a href="https://t.me/sanyue_club">Telegram 频道</a> &nbsp;·&nbsp; <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/discussions/categories/announcements">公告</a>
     </p>
     <p align="center">
         <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/blob/main/LICENSE"><img src="https://img.shields.io/github/license/MarSeventh/CloudFlare-ImgBed" alt="License" /></a>
         <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/releases"><img src="https://img.shields.io/github/release/MarSeventh/CloudFlare-ImgBed" alt="latest version" /></a>
-        <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/releases"><img src="https://img.shields.io/github/downloads/MarSeventh/CloudFlare-ImgBed/total?color=%239F7AEA&logo=github" alt="Downloads" /></a>
         <a href="https://hub.docker.com/r/marseventh/cloudflare-imgbed"><img src="https://img.shields.io/docker/pulls/marseventh/cloudflare-imgbed" alt="Docker Pulls" /></a>
         <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/stargazers"><img src="https://img.shields.io/github/stars/MarSeventh/CloudFlare-ImgBed" alt="Stars" /></a>
         <a href="https://github.com/MarSeventh/CloudFlare-ImgBed/network/members"><img src="https://img.shields.io/github/forks/MarSeventh/CloudFlare-ImgBed" alt="Forks" /></a>
-        <a href="https://atomgit.com/MarSeventh/CloudFlare-ImgBed"><img src="https://atomgit.com/MarSeventh/CloudFlare-ImgBed/star/badge.svg" alt="G-star" /></a>
+        <a href="https://t.me/sanyue_club"><img src="https://img.shields.io/badge/-Sanyue-26A5E4?logo=telegram&logoColor=white" alt="Telegram Sanyue" /></a>
     </p>
     <p align="center">
         <a href="https://trendshift.io/repositories/14324" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14324" alt="GitHub Trending" width="250" /></a>
+        <a href="https://atomgit.com/MarSeventh/CloudFlare-ImgBed" target="_blank"><img src="https://atomgit.com/MarSeventh/CloudFlare-Imgbed/star/new_badge.svg" alt="G-star" width="250" /></a>
         <a href="https://hellogithub.com/repository/MarSeventh/CloudFlare-ImgBed" target="_blank"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=71d65ace215945b0909d4c75c31b9fcb&claim_uid=6DsuqF4hInJWerv&theme=neutral" alt="Featured｜HelloGitHub" width="250" /></a>
     </p>
 </div>
 
 ---
 
-> [!IMPORTANT]
->
-> **遇到问题请务必先查看[公告](https://github.com/MarSeventh/CloudFlare-ImgBed/discussions/categories/announcements)，重要通知和非兼容性更新内容均会在公告中说明！**
-
-
 # 1. 💡 项目介绍
 
-CloudFlare ImgBed 是一个同时支持 Docker 与 Serverless 部署的开源文件托管解决方案，可接入的存储渠道包括 **Telegram**、**Discord**、**Cloudflare R2**、**S3 兼容存储**、**Hugging Face**、**WebDAV** 等。
+CloudFlare ImgBed 是支持 Docker 与 Serverless 部署的自建图床和文件托管方案，可将 **Telegram**、**Discord**、**Cloudflare R2**、**S3 兼容存储**、**Hugging Face**、**WebDAV** 等渠道统一接入一个管理界面。项目提供文件管理、身份认证、目录组织、内容审核、RESTful API 与 WebDAV，同时也在不断增加 AI 驱动的图片标签识别等个性化能力，适用于个人图床、网站资源管理和轻量文件分发。 **[查看完整功能 →](https://cfbed.sanyue.de/guide/features.html)**
 
-它不仅具备**上传**、**管理**、**读取**、**删除**等覆盖文件全生命周期的基础功能，还提供**身份认证**、**目录组织**、**内容审核**、**随机图**等能力，以及完整的 RESTful API 与 WebDAV 支持，适用于自建图床、静态站资源管理和轻量文件分发场景。详见[功能文档](https://cfbed.sanyue.de/guide/features.html)。
+https://github.com/user-attachments/assets/5de3b74c-7d55-44f0-834e-0728e4c3e873
 
-![CloudFlare](readme/海报.png)
+**架构一览**
+
+![CloudFlare ImgBed 技术架构：多端接入、多平台运行时、数据库兼容、统一存储渠道与可扩展 AI 能力](readme/architecture.apng)
+
+基于“同构内核 + 插件化底座”架构，单一核心引擎可无缝运行于 Pages、Workers 或 Docker 容器，并灵活挂载 KV、D1 与 SQLite 等多模态存储。系统通过独立适配器实现元数据与文件载荷的彻底解耦；依托智能通道路由提供动态负载均衡与故障无缝兜底；更内置 AI 原生工作流框架，将可配置的模型、Prompt 与结构化输出深度融入文件处理管线。
+
+## 🤝 合作伙伴
+
+<table width="100%">
+  <tr>
+    <td align="center" width="16%"><strong><a href="https://www.cloudflare.com/">Cloudflare</a></strong></td>
+    <td align="center" width="22%"><a href="https://www.cloudflare.com/"><img src="readme/partners/cloudflare-logo.png" alt="Cloudflare Logo" height="25"></a></td>
+    <td><sub>入选 Project Alexandria 计划，提供高级 CDN 加速及安全防护。</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="16%"><strong><a href="https://edgeone.ai/?from=github">EdgeOne</a></strong></td>
+    <td align="center" width="22%"><a href="https://edgeone.ai/?from=github"><picture><source media="(prefers-color-scheme: dark)" srcset="readme/partners/edgeone-logo-dark.png"><img src="readme/partners/edgeone-logo.png" alt="EdgeOne Logo" height="25"></picture></a></td>
+    <td><sub>入选开发者合作计划，高级 CDN 加速及安全防护</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="16%"><strong><a href="https://www.hncloud.com/activity/activity_2026summer.html?k=MarSeventh">华纳云</a></strong></td>
+    <td align="center" width="22%"><a href="https://www.hncloud.com/activity/activity_2026summer.html?k=MarSeventh"><picture><source media="(prefers-color-scheme: dark)" srcset="readme/partners/hncloud-logo-dark.png"><img src="readme/partners/hncloud-logo.png" alt="华纳云 Logo" height="25"></picture></a></td>
+    <td><sub>提供稳定、优质的云计算资源，通过本项目链接注册立享超值优惠！</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="16%"><strong><a href="https://www.svyun.com/recommend/AELZ0UeMz8K11Zg7pEXC">速维云</a></strong></td>
+    <td align="center" width="22%"><a href="https://www.svyun.com/recommend/AELZ0UeMz8K11Zg7pEXC"><picture><source media="(prefers-color-scheme: dark)" srcset="readme/partners/svyun-logo-dark.png"><img src="readme/partners/svyun-logo.png" alt="速维云 Logo" height="25"></picture></a></td>
+    <td><sub>提供稳定、优质的云计算资源，通过本项目链接注册立享超值优惠！</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="16%"><strong><a href="https://linux.do/t/topic/2578561">Linux DO</a></strong></td>
+    <td align="center" width="22%"><a href="https://linux.do/t/topic/2578561"><picture><source media="(prefers-color-scheme: dark)" srcset="readme/partners/linuxdo-logo.png"><img src="readme/partners/linuxdo-logo-light.png" alt="Linux DO Logo" height="25"></picture></a></td>
+    <td><sub>提供社区支持</sub></td>
+  </tr>
+</table>
+
+
+
 
 # 2. 🖥️ 在线演示
 
 **演示站点**：[CloudFlare ImgBed](https://cfbed.1314883.xyz/) · **访问密码**：`cfbed`
 
-![文件上传页面](readme/upload.png)
+![CloudFlare ImgBed 项目海报](readme/海报.png)
 
 <details>
     <summary>其他页面效果展示</summary>
@@ -103,7 +141,7 @@ CloudFlare ImgBed 是一个同时支持 Docker 与 Serverless 部署的开源文
 
 您也可以向社区分享自己的作品，提交规范请参见[生态建设征集令](https://github.com/MarSeventh/CloudFlare-ImgBed/discussions/606)，期待您的参与！
 
-# 5. 💝 支持与合作伙伴
+# 5. 💝 支持与赞助
 
 ## ☕ 支持项目
 
@@ -121,21 +159,13 @@ CloudFlare ImgBed 是一个同时支持 Docker 与 Serverless 部署的开源文
 
 [![赞助者](https://afdian-sponsors.sanyue.de/image?columns=12)](https://afdian.com/a/marseventh)
 
-## 🤝 合作伙伴
-
-- **[Cloudflare](https://www.cloudflare.com/) & [EdgeOne](https://edgeone.ai/?from=github)**：提供 CDN 加速及安全防护
-
-  <a href="https://www.cloudflare.com/"><img src="readme/cloudflare-logo.png" alt="Cloudflare Logo" height="25"></a> <a href="https://edgeone.ai/?from=github"><img src="readme/edgeone-logo.png" alt="EdgeOne Logo" height="25"></a>
-
-- **[速维云](https://www.svyun.com/recommend/AELZ0UeMz8K11Zg7pEXC)**：提供云计算资源
-
-- **[Linux DO](https://linux.do/)**：提供社区支持
-
 # 6. 👥 项目社区
 
 ## 🧑‍💻 贡献者
 
 感谢所有为项目贡献代码、文档、创意和反馈的开发者！
+
+参与前请阅读[贡献指南](CONTRIBUTING.md)（英文），了解仓库分工、PR 目标分支、代码约定和验证要求。
 
 [![贡献者](https://contrib.rocks/image?repo=Marseventh/Cloudflare-ImgBed)](https://github.com/MarSeventh/CloudFlare-ImgBed/graphs/contributors)
 
@@ -143,11 +173,11 @@ CloudFlare ImgBed 是一个同时支持 Docker 与 Serverless 部署的开源文
 
 **如果这个项目对您有所帮助，欢迎点亮一个 Star ⭐，感谢您的支持！**
 
-<a href="https://www.star-history.com/?repos=MarSeventh%2FCloudFlare-ImgBed%2CMarSeventh%2FSanyue-ImgHub&type=date&legend=top-left">
+<a href="https://github.com/MarSeventh/CloudFlare-ImgBed">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=MarSeventh/CloudFlare-ImgBed%2CMarSeventh/Sanyue-ImgHub&type=date&theme=dark&legend=top-left&sealed_token=sAw_e7kRryMASKC9b3AqORk8leSZgKYTuCvYqOzqsyOmTse-00LgwOS4FtG75lHuCuxsyd-TPlyV3BieLloGaM-3M2AlLeQt2g1_Kczjm0UZdqnvVKRCR2J9oqdE0_XEKFMmOMLG_Loz8Bz3-JPKwiMyTjKM0LRRLm2TjGA73QSrTuOsRAqwj6F7LAVf" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=MarSeventh/CloudFlare-ImgBed%2CMarSeventh/Sanyue-ImgHub&type=date&legend=top-left&sealed_token=sAw_e7kRryMASKC9b3AqORk8leSZgKYTuCvYqOzqsyOmTse-00LgwOS4FtG75lHuCuxsyd-TPlyV3BieLloGaM-3M2AlLeQt2g1_Kczjm0UZdqnvVKRCR2J9oqdE0_XEKFMmOMLG_Loz8Bz3-JPKwiMyTjKM0LRRLm2TjGA73QSrTuOsRAqwj6F7LAVf" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=MarSeventh/CloudFlare-ImgBed%2CMarSeventh/Sanyue-ImgHub&type=date&legend=top-left&sealed_token=sAw_e7kRryMASKC9b3AqORk8leSZgKYTuCvYqOzqsyOmTse-00LgwOS4FtG75lHuCuxsyd-TPlyV3BieLloGaM-3M2AlLeQt2g1_Kczjm0UZdqnvVKRCR2J9oqdE0_XEKFMmOMLG_Loz8Bz3-JPKwiMyTjKM0LRRLm2TjGA73QSrTuOsRAqwj6F7LAVf" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=marseventh%2Fcloudflare-imgbed%2Cmarseventh/sanyue-imghub&amp;type=Date&amp;theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=marseventh%2Fcloudflare-imgbed%2Cmarseventh/sanyue-imghub&amp;type=Date" />
+   <img alt="Star-History" src="https://api.star-history.com/svg?repos=marseventh%2Fcloudflare-imgbed%2Cmarseventh/sanyue-imghub&amp;type=Date" />
  </picture>
 </a>
 
